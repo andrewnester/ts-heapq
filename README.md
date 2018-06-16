@@ -8,6 +8,7 @@ Heap queue algorithm implementation for Typescript based on heapq.py module from
     
 ### Use
 #### Simple example
+    
     import { Heapq } from "ts-heapq";
     
     let heap: Heapq<number> = new Heapq<number>();
@@ -20,6 +21,7 @@ Heap queue algorithm implementation for Typescript based on heapq.py module from
     heap.top(); // returns 2;
     
 #### Implementing max heap using custom comparator
+    
     import { Heapq } from "ts-heapq";
     
     let maxHeap: Heapq<number> = new Heapq<number>([], comparator: (a: number, b: number) => a > b);

@@ -1,4 +1,4 @@
-import { Heapq } from "./index";
+import { Heapq } from "./heapq";
 import { expect } from "chai";
 
 let heap: Heapq<number>;

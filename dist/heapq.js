@@ -105,4 +105,4 @@ var Heapq = /** @class */ (function () {
     return Heapq;
 }());
 exports.Heapq = Heapq;
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=heapq.js.map

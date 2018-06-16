@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var index_1 = require("./index");
+var heapq_1 = require("./heapq");
 var chai_1 = require("chai");
 var heap;
 describe("Heapq", function () {
     beforeEach(function () {
-        heap = new index_1.Heapq();
+        heap = new heapq_1.Heapq();
     });
     it("Should just work", function () {
         for (var i = 0; i < 100; i++) {
@@ -29,7 +29,7 @@ describe("Heapq", function () {
         chai_1.expect(heap.top() === -1);
     });
     it("Should be able to use comparator", function () {
-        var maxHeap = new index_1.Heapq([], function (a, b) { return a > b; });
+        var maxHeap = new heapq_1.Heapq([], function (a, b) { return a > b; });
         maxHeap.push(8);
         maxHeap.push(9);
         maxHeap.push(11);
