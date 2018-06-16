@@ -37,7 +37,7 @@
     "@types/chai": "^4.1.4",
     "@types/mocha": "^2.2.32",
     "@types/node": "^8.0.28",
-    "chai": "^4.1.2"
+    "chai": "^4.1.2",
     "glob": "^7.0.6",
     "istanbul": "^0.4.5",
     "mocha": "^3.5.3",
