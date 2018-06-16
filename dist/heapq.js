@@ -73,6 +73,9 @@ var Heapq = /** @class */ (function () {
     };
     Heapq.prototype.siftdown = function (startPos, pos) {
         var newItem = this.heap[pos];
+        if (!newItem) {
+            return;
+        }
         while (pos > startPos) {
             var parentPos = ((pos - 1) >> 1);
             var parent_1 = this.heap[parentPos];
@@ -89,6 +92,9 @@ var Heapq = /** @class */ (function () {
         var endPos = this.heap.length;
         var startPos = pos;
         var newItem = this.heap[pos];
+        if (!newItem) {
+            return;
+        }
         var childPos = 2 * pos + 1;
         while (childPos < endPos) {
             var rightPos = childPos + 1;

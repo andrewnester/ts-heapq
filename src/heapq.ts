@@ -84,6 +84,9 @@ export class Heapq<T> {
 
     private siftdown(startPos: number, pos: number) {
         const newItem: T = this.heap[pos];
+        if (!newItem) {
+            return;
+        }
 
         while (pos > startPos) {
             let parentPos: number = ((pos - 1) >> 1);
@@ -104,6 +107,9 @@ export class Heapq<T> {
         const endPos: number = this.heap.length;
         const startPos: number = pos;
         const newItem = this.heap[pos];
+        if (!newItem) {
+            return;
+        }
 
         let childPos: number = 2 * pos + 1;
         while (childPos < endPos) {
