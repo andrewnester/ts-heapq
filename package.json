@@ -1,0 +1,50 @@
+{
+  "name": "ts-heapq",
+  "version": "1.0.0",
+  "description": "Heap queue algorithm implementation for Typescript based on heapq.py module from CPython",
+  "main": "./dist/heapq.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "lint": "tslint -c ./tslint.json ./src/**/*.ts",
+    "tsc": "tsc",
+    "build": "npm run clean && npm run lint && npm run tsc",
+    "test": "mocha ./dist/*_test.js",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha -- ./dist/*_test.js",
+    "all": "npm run build && npm run test && npm run cover"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewnester/ts-heapq.git"
+  },
+  "keywords": [
+    "typescript",
+    "heap",
+    "queue",
+    "heapq",
+    "python",
+    "heapq.py",
+    "priority",
+    "queue",
+    "ts"
+  ],
+  "author": "Andrew Nester <andrew.nester.dev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewnester/ts-heapq/issues"
+  },
+  "homepage": "https://github.com/andrewnester/ts-heapq",
+  "devDependencies": {
+    "@types/mocha": "^2.2.32",
+    "@types/node": "^8.0.28",
+    "glob": "^7.0.6",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.5.3",
+    "rimraf": "^2.5.4",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2"
+  },
+  "dependencies": {
+    "@types/chai": "^4.1.4",
+    "chai": "^4.1.2"
+  }
+}
