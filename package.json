@@ -1,6 +1,6 @@
 {
   "name": "ts-heapq",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Heap queue algorithm implementation for Typescript based on heapq.py module from CPython",
   "main": "./dist/index",
   "typings": "./dist/index",
