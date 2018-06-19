@@ -1,5 +1,6 @@
 ## Heapq for Typescript
 
+[![TypeScript](https://badges.frapsoft.com/typescript/code/typescript.svg?v=101)](https://github.com/ellerbrock/typescript-badges/)
 [![Build Status](https://travis-ci.org/andrewnester/ts-heapq.svg?branch=master)](https://travis-ci.org/andrewnester/ts-heapq)
 [![Maintainability](https://api.codeclimate.com/v1/badges/b90d3149712e35d098e8/maintainability)](https://codeclimate.com/github/andrewnester/ts-heapq/maintainability)
 [![npm version](https://badge.fury.io/js/ts-heapq.svg)](https://badge.fury.io/js/ts-heapq)
