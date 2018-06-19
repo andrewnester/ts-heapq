@@ -1,5 +1,7 @@
 ## Heapq for Typescript
 
+[![Build Status](https://travis-ci.org/andrewnester/ts-heapq.svg?branch=master)](https://travis-ci.org/andrewnester/ts-heapq)
+
 Heap queue algorithm implementation for Typescript based on heapq.py module from CPython
 
 ### Installation
