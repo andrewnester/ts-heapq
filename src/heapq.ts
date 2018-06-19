@@ -75,6 +75,13 @@ export class Heapq<T> {
         return this.heap[0];
     }
 
+    /**
+     * Returns the length of the heap.
+     */
+    length(): number {
+        return this.heap.length;
+    }
+
     private heapify() {
         const n: number = this.heap.length;
         for (let i: number = n / 2; i >= 0; i--) {

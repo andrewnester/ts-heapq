@@ -65,6 +65,12 @@ var Heapq = /** @class */ (function () {
     Heapq.prototype.top = function () {
         return this.heap[0];
     };
+    /**
+     * Returns the length of the heap.
+     */
+    Heapq.prototype.length = function () {
+        return this.heap.length;
+    };
     Heapq.prototype.heapify = function () {
         var n = this.heap.length;
         for (var i = n / 2; i >= 0; i--) {

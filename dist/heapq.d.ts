@@ -30,6 +30,10 @@ export declare class Heapq<T> {
      * Returns current smallest item in heap queue (does not pop it).
      */
     top(): T;
+    /**
+     * Returns the length of the heap.
+     */
+    length(): number;
     private heapify;
     private siftdown;
     private siftup;
