@@ -29,15 +29,12 @@ export class Heapq<T> {
      * Throw exception if heap queue is empty.
      */
     pop(): T {
-        if (!this.heap.length) {
+        if (this.heap.length === 0) {
             throw new Error("Heap is empty");
         }
 
-        const last: T | undefined = this.heap.pop();
-
-        if (!this.heap.length) {
-            return last;
-        }
+        const last = this.heap[this.heap.length - 1];
+        this.heap.pop();
 
         const returnItem: T = this.heap[0];
         this.heap[0] = last;

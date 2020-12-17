@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Heapq = void 0;
 /**
  * Heap queue algorithm (a.k.a. priority queue).
  *
@@ -27,13 +28,11 @@ var Heapq = /** @class */ (function () {
      * Throw exception if heap queue is empty.
      */
     Heapq.prototype.pop = function () {
-        var last = this.heap.pop();
-        if (!last) {
+        if (this.heap.length === 0) {
             throw new Error("Heap is empty");
         }
-        if (!this.heap.length) {
-            return last;
-        }
+        var last = this.heap[this.heap.length - 1];
+        this.heap.pop();
         var returnItem = this.heap[0];
         this.heap[0] = last;
         this.siftup(0);
