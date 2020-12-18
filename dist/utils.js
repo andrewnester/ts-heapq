@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.merge = void 0;
 var heapq_1 = require("./heapq");
 function merge(comparator) {
     var iterables = [];
