@@ -15,6 +15,7 @@ Heap queue algorithm implementation for Typescript based on heapq.py module from
     npm install ts-heapq
     
 ### Use
+Test
 #### Simple example
     
     import { Heapq } from "ts-heapq";
