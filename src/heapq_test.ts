@@ -47,4 +47,24 @@ describe("Heapq", () => {
         expect(maxHeap.top() === 15);
 
     });
+
+    test('should handle zero correctly', () => {
+        heap.push(5);
+        heap.push(3);
+        heap.push(0);
+
+        expect(heap.pop()).to.equal(0);
+        expect(heap.pop()).to.equal(3);
+        expect(heap.pop()).to.equal(5);
+    });
+
+    test('should handle multiple zeros correctly', () => {
+        heap.push(0);
+        heap.push(0);
+        heap.push(0);
+
+        expect(heap.pop()).to.equal(0);
+        expect(heap.pop()).to.equal(0);
+        expect(heap.pop()).to.equal(0);
+    });
 });
