@@ -48,7 +48,7 @@ describe("Heapq", () => {
 
     });
 
-    test('should handle zero correctly', () => {
+    test("should handle zero correctly", () => {
         heap.push(5);
         heap.push(3);
         heap.push(0);
@@ -58,7 +58,7 @@ describe("Heapq", () => {
         expect(heap.pop()).to.equal(5);
     });
 
-    test('should handle multiple zeros correctly', () => {
+    test("should handle multiple zeros correctly", () => {
         heap.push(0);
         heap.push(0);
         heap.push(0);
