@@ -88,7 +88,7 @@ export class Heapq<T> {
 
     private siftdown(startPos: number, pos: number) {
         const newItem: T = this.heap[pos];
-        if (!newItem) {
+        if (newItem === undefined) {
             return;
         }
 
@@ -111,7 +111,7 @@ export class Heapq<T> {
         const endPos: number = this.heap.length;
         const startPos: number = pos;
         const newItem = this.heap[pos];
-        if (!newItem) {
+        if (newItem === undefined) {
             return;
         }
 
