@@ -34,9 +34,10 @@ export class Heapq<T> {
         }
 
         const last = this.heap[this.heap.length - 1];
+        const returnItem: T = this.heap[0];
+
         this.heap.pop();
 
-        const returnItem: T = this.heap[0];
         this.heap[0] = last;
         this.siftup(0);
         return returnItem;
